@@ -26,75 +26,6 @@
 <script src="js/formvalidation.js"></script>
 <script src="js/html5placeholder.jquery.js"></script>
 <script src="js/jquery.tweet.js"></script>
-<style type="text/css">
-	#tabs {
-  overflow: hidden;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-#tabs li {
-  float: left;
-  margin: 0 .5em 0 0;
-}
-
-#tabs a {
-  position: relative;
-  background: #ddd;
-  background-image: linear-gradient(to bottom, #fff, #ddd);
-  padding: .7em 3.5em;
-  float: left;
-  text-decoration: none;
-  color: #444;
-  text-shadow: 0 1px 0 rgba(255,255,255,.8);
-  border-radius: 5px 0 0 0;
-  box-shadow: 0 2px 2px rgba(0,0,0,.4);
-}
-
-#tabs a:hover,
-#tabs a:hover::after,
-#tabs a:focus,
-#tabs a:focus::after {
-  background: #fff;
-}
-
-#tabs a:focus {
-  outline: 0;
-}
-
-#tabs a::after {
-  content:'';
-  position:absolute;
-  z-index: 1;
-  top: 0;
-  right: -.5em;
-  bottom: 0;
-  width: 1em;
-  background: #ddd;
-  background-image: linear-gradient(to bottom, #fff, #ddd);
-  box-shadow: 2px 2px 2px rgba(0,0,0,.4);
-  transform: skew(10deg);
-  border-radius: 0 5px 0 0;
-}
-
-#tabs #current a,
-#tabs #current a::after {
-  background: #fff;
-  z-index: 3;
-}
-
-#content {
-  background: #fff;
-  padding: 2em;
-  height: 100%;
-  position: relative;
-  z-index: 2;
-  border-radius: 0 5px 5px 5px;
-  box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
-}
-</style>
 </head>
 <body>
 <!-- Top Green Bar -->
@@ -206,73 +137,43 @@
 ================================================== -->
 <div class="container">
 	<!-- Main hero unit for a primary marketing message or call to action -->
-	<h1 class="title">Letter Archive Here</h1>
+	<h1 class="title">Gallery</h1>
 	<div class="titlelinesimple">
 	</div>
-	<!-- Content
+	<!-- Portofolio
 	================================================== -->
-	<div class="row">
-		<div class="span16">
-			<ul id="tabs">
-    <li><a href="#" name="tab1">1882</a></li>
-    <li><a href="#" name="tab2">1883</a></li>
-    <li><a href="#" name="tab3">1884</a></li>
-    <li><a href="#" name="tab4">1885</a></li>
-</ul>
-
-<div id="content">
-    <div id="tab1">
-    	<ul>
-    		<li><a href="1882/jan 17.html">17 January 1882</a></li><br>
-    		<li><a href="1882/7 June.html">7 June 1882</a></li><br>
-    		<li><a href="1882/23 June.html">23 June 1882</a></li><br>
-    		<li><a href="1882/10 October.html">10 October 1882</a></li><br>
-    		<li><a href="1882/27 November.html">27 November 1882</a></li><br>
-    		<li><a href="1882/30 December 1882 (Paciano Rizal).html">30 December 1882 (Paciano Rizal)</a></li><br>
-    		<li><a href="1882/30 December 1882 (Josefa Rizal).html">30 December 1882 (Josefa Rizal)</a></li><br>
-    		<li><a href="1882/30 December 1882 (Maria Rizal).html">30 December 1882 (María Rizal)</a></li><br>
-    	</ul>
-    </div>
-    <div id="tab2">
-    	<ul>
-    		<li><a href="1883/January 11, 1883.html">January 11, 1883</a></li><br>
-    		<li><a href="1883/January 29, 1883 (Saturnina Rizal).html">January 29, 1883 (Saturnina Rizal)</a></li><br>
-    		<li><a href="1883/January 29, 1883 (Manuel T. Hildalgo).html">January 29, 1883 (Manuel T. Hildalgo)</a></li><br>
-    		<li><a href="1883/February 13, 1883.html">February 13, 1883</a></li><br>
-    		<li><a href="1883/">June 21, 1883</a></li><br>
-    		<li><a href="1883/">July 20, 1883 (letter is cut)</a></li><br>
-    		<li><a href="1883/">August 2, 1883 (letter is cut)</a></li><br>
-    		<li><a href="1883/">September 11, 1883</a></li><br>
-    		<li><a href="1883/">October 28, 1883</a></li><br>
-    		<li><a href="1883/">November 21, 1883</a></li><br>
-    		<li><a href="1883/">No date indicated (letter is cut)</a></li><br>
-    	</ul>
-    </div>
-    <div id="tab3">
-    	<ul>
-    		<li><a href="">June 28, 1884</a></li><br>
-    		<li><a href="">August 29, 1884</a></li><br>
-    		<li><a href="">November 16, 1884</a></li><br>
-    		<li><a href="">November 26, 1884</a></li><br>
-    		<li><a href="">December 17, 1884 (The student agitation worsening -- Decline of Philippine sugar trade -- Rizal is not receiving his allowance --His expenses)</a></li><br>
-    		<li><a href="">December 18-onwards 1884 (Rizal resents the lending of his books -- Urges his family to save his books.)</a></li><br>
-    		<li><a href="">Faqs in every letter(1884)</a></li><br>
-    		
-    	</ul>
-    </div>
-    <div id="tab4">
-    	<ul>
-    		<li><a href="">June 11-1, 1885</a></li><br>
-    		<li><a href="">June 11-1 (2), 1885</a></li><br>
-    		<li><a href="">July 30, 1885</a></li><br>
-    		<li><a href="">July 31-August 25, 1885 (Date Uncertain)</a></li><br>
-    		<li><a href="">October 1, 1885</a></li><br>
-    		<li><a href="">December 4, 1885</a></li><br>
-    		<li><a href="">Faqs about the letters(1885)</a></li><br>
-    		
-    	</ul>
-    </div>
-</div>
+	<div class="row center">
+		<div class="span12">
+		
+			<div class="boxgrid thecombo">
+				<img class="cover" src="img/portofolio/2.jpg" alt="" width="320px" height="320px" />
+				<h3>Letter 2</h3>
+				<p>
+					Title<br/><a href="#" target="_BLANK">View Full Gallery</a>
+				</p>
+			</div>
+			<div class="boxgrid slideright">
+				<img class="cover" src="img/portofolio/3.jpg" alt="" width="320px" height="320px"/>
+				<h3>Letter</h3>
+				<p>
+					Title<br/><a href="#" target="_BLANK">View Full Gallery</a>
+				</p>
+			</div>
+			<div class="boxgrid thecombo">
+				<img class="cover" src="img/portofolio/4.jpg" alt="" width="320px" height="320px"/>
+				<h3>Letter Name</h3>
+				<p>
+					Title<br/><a href="#" target="_BLANK">View Full Gallery</a>
+				</p>
+			</div>
+			<div class="boxgrid slideright">
+				<img class="cover" src="img/portofolio/5.jpg" alt="" width="320px" height="320px"/>
+				<h3>Letter</h3>
+				<p>
+					Title<br/><a href="#" target="_BLANK">View Full Gallery</a>
+				</p>
+			</div>
+	
 		</div>
 	</div>
 	<!-- Footer 
@@ -323,27 +224,48 @@
 <!-- Ended Container-->
 <div class="footerend">
 </div>
+<!-- Portofolio Script 
+================================================== -->
+<script type="text/javascript">
+			$(document).ready(function(){
+				//To switch directions up/down and left/right just place a "-" in front of the top/left attribute
+				//Vertical Sliding
+				$('.boxgrid.slidedown').hover(function(){
+					$(".cover", this).stop().animate({top:'-260px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:300});
+				});
+				//Horizontal Sliding
+				$('.boxgrid.slideright').hover(function(){
+					$(".cover", this).stop().animate({left:'325px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({left:'0px'},{queue:false,duration:300});
+				});
+				//Diagnal Sliding
+				$('.boxgrid.thecombo').hover(function(){
+					$(".cover", this).stop().animate({top:'260px', left:'325px'},{queue:false,duration:300});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px', left:'0px'},{queue:false,duration:300});
+				});
+				//Partial Sliding (Only show some of background)
+				$('.boxgrid.peek').hover(function(){
+					$(".cover", this).stop().animate({top:'90px'},{queue:false,duration:160});
+				}, function() {
+					$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:160});
+				});
+				//Full Caption Sliding (Hidden to Visible)
+				$('.boxgrid.captionfull').hover(function(){
+					$(".cover", this).stop().animate({top:'160px'},{queue:false,duration:160});
+				}, function() {
+					$(".cover", this).stop().animate({top:'260px'},{queue:false,duration:160});
+				});
+				//Caption Sliding (Partially Hidden to Visible)
+				$('.boxgrid.caption').hover(function(){
+					$(".cover", this).stop().animate({top:'160px'},{queue:false,duration:160});
+				}, function() {
+					$(".cover", this).stop().animate({top:'220px'},{queue:false,duration:160});
+				});
+			});
+		</script>
 </body>
 </html>
-
-<script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
-<script>
-$(document).ready(function() {
-    $("#content").find("[id^='tab']").hide(); // Hide all content
-    $("#tabs li:first").attr("id","current"); // Activate the first tab
-    $("#content #tab1").fadeIn(); // Show first tab's content
-
-    $('#tabs a').click(function(e) {
-        e.preventDefault();
-        if ($(this).closest("li").attr("id") == "current"){ //detection for current tab
-         return;
-        }
-        else{
-          $("#content").find("[id^='tab']").hide(); // Hide all content
-          $("#tabs li").attr("id",""); //Reset id's
-          $(this).parent().attr("id","current"); // Activate this
-          $('#' + $(this).attr('name')).fadeIn(); // Show content for the current tab
-        }
-    });
-});
-</script>
